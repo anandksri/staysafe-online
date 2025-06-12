@@ -1,0 +1,16 @@
+/* For blinking cursor in typing animation */
+#hero-title::after {
+  content: "|";
+  animation: blink 1.2s steps(2, start) infinite;
+  color: #22c55e; /* Tailwind green-500 */
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  50.01%, 100% {
+    opacity: 0;
+  }
+}

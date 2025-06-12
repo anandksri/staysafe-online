@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Stay Safe in the Online Jungle - Cybersecurity awareness with tips, threats, tools, and resources." />
+    <title>Stay Safe in the Online Jungle | Cybersecurity Awareness</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://anandksri.github.io/staysafe-online/" />
+
+    <!-- SEO Keywords -->
+    <meta name="keywords"
+        content="cybersecurity, online safety, digital security, privacy, phishing, ransomware, VPN, password manager, cyber awareness, internet threats, cybersecurity tips" />
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Stay Safe in the Online Jungle | Cybersecurity Awareness" />
+    <meta property="og:description"
+        content="Learn simple steps to protect yourself from online threats. Tips, tools, and news on cybersecurity." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://anandksri.github.io/staysafe-online/" />
+    <meta property="og:image"
+        content="https://anandksri.github.io/staysafe-online/favicons/android-chrome-512x512.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Stay Safe in the Online Jungle | Cybersecurity Awareness" />
+    <meta name="twitter:description"
+        content="Protect your digital life with essential cybersecurity tips and resources." />
+    <meta name="twitter:image"
+        content="https://anandksri.github.io/staysafe-online/favicons/android-chrome-512x512.png" />
+
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Stay Safe Online",
+  "url": "https://anandksri.github.io/staysafe-online/",
+  "description": "Cybersecurity awareness site offering tips, tools, and threat insights.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Cyber Pioneer",
+    "url": "https://tcpioneer.org"
+  }
+}
+</script>
+
+</head>
+
+<body class="bg-gray-900 text-gray-300 font-sans leading-relaxed">
+
+    <!-- Navbar -->
+    <header
+        class="sticky top-0 z-50 bg-gray-900 bg-opacity-80 backdrop-blur-md shadow-2xl flex items-center justify-between px-6 py-4 transition-all duration-300"
+        role="banner">
+        <a href="#home"
+            class="flex items-center gap-2 text-2xl font-mono text-green-400 cursor-pointer select-none focus:outline-none focus:ring-2 focus:ring-green-400 rounded"
+            tabindex="0" aria-label="Go to homepage">
+            <i class="fa-solid fa-shield-cat text-green-400 text-3xl"></i>
+            StaySafe Online
+        </a>
+        <div class="flex-1"></div>
+        <!-- Hamburger Button (Mobile) -->
+        <button id="nav-toggle"
+            class="md:hidden text-green-400 focus:outline-none focus:ring-2 focus:ring-green-400 rounded p-2 transition relative group"
+            aria-label="Open navigation" aria-expanded="false">
+            <span
+                class="block w-8 h-1 bg-green-400 mb-1 rounded transition-transform duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-2"></span>
+            <span
+                class="block w-8 h-1 bg-green-400 mb-1 rounded transition-opacity duration-300 group-[.open]:opacity-0"></span>
+            <span
+                class="block w-8 h-1 bg-green-400 rounded transition-transform duration-300 group-[.open]:-rotate-45 group-[.open]:-translate-y-2"></span>
+        </button>
+        <nav role="navigation" aria-label="Primary navigation">
+            <ul id="nav-menu"
+                class="flex-col md:flex-row md:flex space-y-4 md:space-y-0 md:space-x-8 text-gray-300 absolute md:static top-full left-0 w-full md:w-auto bg-gray-900 bg-opacity-95 md:bg-transparent shadow-lg md:shadow-none px-6 md:px-0 py-4 md:py-0 hidden md:flex transition-all duration-200 rounded-b-lg md:rounded-none">
+                <li><a href="#home"
+                        class="hover:text-green-400 focus:text-green-400 focus:outline-none px-2 py-1 rounded transition">Home</a>
+                </li>
+                <li><a href="#about"
+                        class="hover:text-green-400 focus:text-green-400 focus:outline-none px-2 py-1 rounded transition">About</a>
+                </li>
+                <li><a href="#tips"
+                        class="hover:text-green-400 focus:text-green-400 focus:outline-none px-2 py-1 rounded transition">Tips</a>
+                </li>
+                <li><a href="#threats"
+                        class="hover:text-green-400 focus:text-green-400 focus:outline-none px-2 py-1 rounded transition">Threats</a>
+                </li>
+                <li><a href="#tools"
+                        class="hover:text-green-400 focus:text-green-400 focus:outline-none px-2 py-1 rounded transition">Tools</a>
+                </li>
+                <li><a href="#news"
+                        class="hover:text-green-400 focus:text-green-400 focus:outline-none px-2 py-1 rounded transition">News</a>
+                </li>
+                <li><a href="#learn"
+                        class="hover:text-green-400 focus:text-green-400 focus:outline-none px-2 py-1 rounded transition">Learn
+                        More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4 py-16 sm:py-24"
+        aria-label="Homepage hero section">
+        <h1 id="hero-title"
+            class="text-4xl sm:text-5xl md:text-7xl font-mono text-green-400 mb-4 whitespace-pre-wrap min-h-[4rem] sm:min-h-[6rem]"
+            aria-live="polite" aria-atomic="true" aria-relevant="additions"></h1>
+        <p class="text-gray-400 text-base sm:text-lg md:text-xl max-w-xs sm:max-w-md md:max-w-xl mb-8">
+            Simple steps to protect yourself in the digital jungle.
+        </p>
+        <a href="#tips"
+            class="inline-block bg-green-500 hover:bg-green-600 focus:ring-4 focus:ring-green-400 focus:outline-none text-gray-900 font-semibold px-5 py-2 sm:px-6 sm:py-3 rounded-md transition text-base sm:text-lg"
+            role="button" tabindex="0">Start Learning Now</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-16" tabindex="0" aria-label="About cybersecurity importance">
+        <h2 class="text-3xl font-mono text-green-400 mb-6">Why Cybersecurity Matters</h2>
+        <p class="mb-4 text-gray-300 leading-relaxed max-w-4xl">
+            In today’s hyper-connected world, your personal data is constantly at risk.
+            Cybercriminals exploit vulnerabilities to steal your identity, money, and privacy.
+            Understanding cybersecurity helps you navigate the online jungle safely and keep your digital life secure.
+        </p>
+        <p class="mb-4 text-gray-300 leading-relaxed max-w-4xl">
+            By adopting simple but effective practices, you can defend yourself against most cyber threats and protect
+            what matters most.
+        </p>
+        <div class="mt-8 grid gap-8 md:grid-cols-2">
+            <div>
+                <h3 class="text-2xl font-semibold text-green-300 mb-2">Who Needs Cybersecurity?</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4">
+                    <li>Individuals protecting personal data and privacy</li>
+                    <li>Businesses safeguarding customer and financial information</li>
+                    <li>Students and educators using online platforms</li>
+                    <li>Anyone using the internet or connected devices</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold text-green-300 mb-2">Consequences of Poor Cybersecurity</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4">
+                    <li>Identity theft and financial loss</li>
+                    <li>Loss of sensitive or irreplaceable data</li>
+                    <li>Damage to reputation and trust</li>
+                    <li>Disruption of business or personal life</li>
+                </ul>
+            </div>
+        </div>
+        <p class="mt-8 text-gray-400 max-w-4xl">
+            Cybersecurity is not just for experts—everyone plays a role. Staying informed and vigilant is your best
+            defense against the ever-evolving threats in the digital world.
+        </p>
+    </section>
+
+    <!-- Tips -->
+    <section id="tips" class="bg-gray-900 py-16 px-6" tabindex="0" aria-label="Top cybersecurity tips">
+        <h2 class="text-4xl font-mono text-green-400 mb-16 text-center tracking-wide">
+            Top Cybersecurity Tips
+        </h2>
+        <div class="grid gap-12 max-w-7xl mx-auto sm:grid-cols-2 lg:grid-cols-3" role="list">
+
+            <!-- Tip 1 -->
+            <article
+                class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.03] transition-transform duration-300 cursor-pointer focus:outline-none focus:ring-4 focus:ring-green-400"
+                role="listitem" tabindex="0" aria-label="Use strong passwords and a password manager">
+                <i class="fa-solid fa-lock-keyhole text-green-400 text-5xl mb-6"></i>
+                <h3 class="text-2xl font-semibold mb-3 text-green-300 leading-tight">
+                    Use Strong Passwords &amp; Password Manager
+                </h3>
+                <p class="mb-5 text-gray-300 leading-relaxed">
+                    Create complex, unique passwords for every account and store them securely with a password manager.
+                </p>
+                <a href="https://bitwarden.com" target="_blank" rel="noopener"
+                    class="inline-block text-green-400 hover:text-green-500 font-mono underline tracking-wide">
+                    Learn more &rarr;
+                </a>
+            </article>
+
+            <!-- Tip 2 -->
+            <article
+                class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.03] transition-transform duration-300 cursor-pointer focus:outline-none focus:ring-4 focus:ring-green-400"
+                role="listitem" tabindex="0" aria-label="Enable two-factor authentication">
+                <i class="fa-solid fa-shield-halved text-green-400 text-5xl mb-6"></i>
+                <h3 class="text-2xl font-semibold mb-3 text-green-300 leading-tight">
+                    Enable Two-Factor Authentication (2FA)
+                </h3>
+                <p class="mb-5 text-gray-300 leading-relaxed">
+                    Add an extra layer of security to your accounts by requiring a second form of verification.
+                </p>
+                <a href="https://twofactorauth.org" target="_blank" rel="noopener"
+                    class="inline-block text-green-400 hover:text-green-500 font-mono underline tracking-wide">
+                    Learn more &rarr;
+                </a>
+            </article>
+
+            <!-- Tip 3 -->
+            <article
+                class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.03] transition-transform duration-300 cursor-pointer focus:outline-none focus:ring-4 focus:ring-green-400"
+                role="listitem" tabindex="0" aria-label="Avoid suspicious links">
+                <i class="fa-solid fa-link-slash text-green-400 text-5xl mb-6"></i>
+                <h3 class="text-2xl font-semibold mb-3 text-green-300 leading-tight">
+                    Avoid Suspicious Links &amp; Emails
+                </h3>
+                <p class="mb-5 text-gray-300 leading-relaxed">
+                    Be cautious with emails and links from unknown sources to prevent phishing and malware infections.
+                </p>
+                <a href="https://www.consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams" target="_blank"
+                    rel="noopener"
+                    class="inline-block text-green-400 hover:text-green-500 font-mono underline tracking-wide">
+                    Learn more &rarr;
+                </a>
+            </article>
+
+            <!-- Tip 4 -->
+            <article
+                class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.03] transition-transform duration-300 cursor-pointer focus:outline-none focus:ring-4 focus:ring-green-400"
+                role="listitem" tabindex="0" aria-label="Keep software updated">
+                <i class="fa-solid fa-arrow-rotate-right text-green-400 text-5xl mb-6"></i>
+                <h3 class="text-2xl font-semibold mb-3 text-green-300 leading-tight">
+                    Keep Software &amp; Devices Updated
+                </h3>
+                <p class="mb-5 text-gray-300 leading-relaxed">
+                    Regularly update your operating system and apps to patch security vulnerabilities.
+                </p>
+                <a href="https://www.us-cert.gov/ncas/tips/ST04-006" target="_blank" rel="noopener"
+                    class="inline-block text-green-400 hover:text-green-500 font-mono underline tracking-wide">
+                    Learn more &rarr;
+                </a>
+            </article>
+
+            <!-- Tip 5 -->
+            <article
+                class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.03] transition-transform duration-300 cursor-pointer focus:outline-none focus:ring-4 focus:ring-green-400"
+                role="listitem" tabindex="0" aria-label="Use VPN on public Wi-Fi">
+                <i class="fa-solid fa-wifi text-green-400 text-5xl mb-6"></i>
+                <h3 class="text-2xl font-semibold mb-3 text-green-300 leading-tight">
+                    Use VPN on Public Wi-Fi
+                </h3>
+                <p class="mb-5 text-gray-300 leading-relaxed">
+                    Protect your internet traffic on public networks with a trusted Virtual Private Network.
+                </p>
+                <a href="https://protonvpn.com" target="_blank" rel="noopener"
+                    class="inline-block text-green-400 hover:text-green-500 font-mono underline tracking-wide">
+                    Learn more &rarr;
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Threats -->
+    <section id="threats" class="max-w-7xl mx-auto px-6 py-16" tabindex="0" aria-label="Common cybersecurity threats">
+        <h2 class="text-3xl font-mono text-green-400 mb-10 text-center">Common Cybersecurity Threats</h2>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <article
+                class="bg-gray-800 p-6 rounded-lg border border-green-600 hover:border-green-400 transition shadow-lg focus-within:ring-4 ring-green-400"
+                tabindex="0" role="article" aria-label="Phishing">
+                <h3 class="text-xl font-semibold text-green-300 mb-2">Phishing</h3>
+                <p class="text-gray-300">
+                    Deceptive emails or messages pretending to be trusted sources to steal credentials or install
+                    malware.
+                </p>
+            </article>
+
+            <article
+                class="bg-gray-800 p-6 rounded-lg border border-green-600 hover:border-green-400 transition shadow-lg focus-within:ring-4 ring-green-400"
+                tabindex="0" role="article" aria-label="Malware">
+                <h3 class="text-xl font-semibold text-green-300 mb-2">Malware</h3>
+                <p class="text-gray-300">
+                    Malicious software such as viruses, ransomware, or spyware that harms your device or steals data.
+                </p>
+            </article>
+
+            <article
+                class="bg-gray-800 p-6 rounded-lg border border-green-600 hover:border-green-400 transition shadow-lg focus-within:ring-4 ring-green-400"
+                tabindex="0" role="article" aria-label="Man-in-the-Middle Attack">
+                <h3 class="text-xl font-semibold text-green-300 mb-2">Man-in-the-Middle Attack</h3>
+                <p class="text-gray-300">
+                    Intercepting communication between two parties to eavesdrop or alter information without consent.
+                </p>
+            </article>
+
+            <article
+                class="bg-gray-800 p-6 rounded-lg border border-green-600 hover:border-green-400 transition shadow-lg focus-within:ring-4 ring-green-400"
+                tabindex="0" role="article" aria-label="Ransomware">
+                <h3 class="text-xl font-semibold text-green-300 mb-2">Ransomware</h3>
+                <p class="text-gray-300">
+                    Malicious software that encrypts your files and demands payment for their release.
+                </p>
+            </article>
+
+            <article
+                class="bg-gray-800 p-6 rounded-lg border border-green-600 hover:border-green-400 transition shadow-lg focus-within:ring-4 ring-green-400"
+                tabindex="0" role="article" aria-label="Data Breaches">
+                <h3 class="text-xl font-semibold text-green-300 mb-2">Data Breaches</h3>
+                <p class="text-gray-300">
+                    Unauthorized access to sensitive data, often resulting in identity theft or financial loss.
+                </p>
+            </article>
+
+            <article
+                class="bg-gray-800 p-6 rounded-lg border border-green-600 hover:border-green-400 transition shadow-lg focus-within:ring-4 ring-green-400"
+                tabindex="0" role="article" aria-label="Social Engineering">
+                <h3 class="text-xl font-semibold text-green-300 mb-2">Social Engineering</h3>
+                <p class="text-gray-300">
+                    Manipulating people into revealing confidential information or performing unsafe actions.
+                </p>
+            </article>
+
+            <article
+                class="bg-gray-800 p-6 rounded-lg border border-green-600 hover:border-green-400 transition shadow-lg focus-within:ring-4 ring-green-400"
+                tabindex="0" role="article" aria-label="Denial-of-Service (DoS)">
+                <h3 class="text-xl font-semibold text-green-300 mb-2">Denial-of-Service (DoS)</h3>
+                <p class="text-gray-300">
+                    Attacks that overwhelm systems or networks, making them unavailable to users.
+                </p>
+            </article>
+
+            <article
+                class="bg-gray-800 p-6 rounded-lg border border-green-600 hover:border-green-400 transition shadow-lg focus-within:ring-4 ring-green-400"
+                tabindex="0" role="article" aria-label="Credential Stuffing">
+                <h3 class="text-xl font-semibold text-green-300 mb-2">Credential Stuffing</h3>
+                <p class="text-gray-300">
+                    Using stolen usernames and passwords from one breach to access accounts on other services.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Tools -->
+    <section id="tools" class="bg-gray-800 py-16 px-6" tabindex="0" aria-label="Recommended cybersecurity tools">
+        <h2 class="text-3xl font-mono text-green-400 mb-10 text-center">Recommended Cybersecurity Tools</h2>
+        <ul class="max-w-4xl mx-auto space-y-6 list-disc list-inside text-gray-300 text-lg">
+            <li>
+                <strong>Bitwarden</strong> – Secure and easy-to-use password manager
+            </li>
+            <li>
+                <strong>ProtonVPN</strong> – Trusted VPN service for privacy
+            </li>
+            <li>
+                <strong>Malwarebytes</strong> – Anti-malware software to detect threats
+            </li>
+            <li>
+                <strong>Have I Been Pwned</strong> – Check if your accounts have been compromised
+            </li>
+            <li>
+                <strong>Firefox</strong> or <strong>Brave</strong> – Privacy-focused browsers
+            </li>
+            <li>
+                <strong>uBlock Origin</strong> – Powerful, open-source ad and tracker blocker
+            </li>
+            <li>
+                <strong>Signal</strong> – Encrypted messaging app for private communication
+            </li>
+            <li>
+                <strong>Authy</strong> or <strong>Google Authenticator</strong> – Two-factor authentication apps
+            </li>
+            <li>
+                <strong>DuckDuckGo Privacy Essentials</strong> – Browser extension for enhanced privacy
+            </li>
+            <li>
+                <strong>Veracrypt</strong> – Open-source disk encryption tool
+            </li>
+        </ul>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="max-w-7xl mx-auto px-6 py-16" tabindex="0" aria-label="Latest cybersecurity news">
+        <h2 class="text-3xl font-mono text-green-400 mb-10 text-center">Latest Cybersecurity News</h2>
+        <article
+            class="bg-gray-900 p-6 rounded-lg border border-green-600 hover:border-green-400 transition shadow-lg mb-6 focus-within:ring-4 ring-green-400"
+            tabindex="0" role="article" aria-label="New ransomware variant targets small businesses">
+            <h3 class="text-2xl font-semibold text-green-300 mb-2">
+                New Ransomware Variant Targets Small Businesses
+            </h3>
+            <p class="text-gray-300 mb-2">
+                A new ransomware strain is spreading rapidly, demanding high ransom payments and encrypting vital
+                business data.
+            </p>
+            <p class="text-sm text-gray-500">Published: June 5, 2025</p>
+        </article>
+
+        <article
+            class="bg-gray-900 p-6 rounded-lg border border-green-600 hover:border-green-400 transition shadow-lg mb-6 focus-within:ring-4 ring-green-400"
+            tabindex="0" role="article" aria-label="Major data breach at popular social media platform">
+            <h3 class="text-2xl font-semibold text-green-300 mb-2">
+                Major Data Breach at Popular Social Media Platform
+            </h3>
+            <p class="text-gray-300 mb-2">
+                Millions of users’ data has been exposed due to a vulnerability in the platform’s security.
+            </p>
+            <p class="text-sm text-gray-500">Published: May 28, 2025</p>
+        </article>
+
+        <article
+            class="bg-gray-900 p-6 rounded-lg border border-green-600 hover:border-green-400 transition shadow-lg mb-6 focus-within:ring-4 ring-green-400"
+            tabindex="0" role="article" aria-label="Critical browser vulnerability patched">
+            <h3 class="text-2xl font-semibold text-green-300 mb-2">
+                Critical Browser Vulnerability Patched
+            </h3>
+            <p class="text-gray-300 mb-2">
+                A major browser vendor has released an urgent update to fix a zero-day vulnerability exploited in the
+                wild.
+            </p>
+            <p class="text-sm text-gray-500">Published: May 20, 2025</p>
+        </article>
+
+        <article
+            class="bg-gray-900 p-6 rounded-lg border border-green-600 hover:border-green-400 transition shadow-lg mb-6 focus-within:ring-4 ring-green-400"
+            tabindex="0" role="article" aria-label="Phishing campaign targets remote workers">
+            <h3 class="text-2xl font-semibold text-green-300 mb-2">
+                Phishing Campaign Targets Remote Workers
+            </h3>
+            <p class="text-gray-300 mb-2">
+                Security experts warn of a new phishing campaign using fake remote work tools to steal credentials.
+            </p>
+            <p class="text-sm text-gray-500">Published: May 12, 2025</p>
+        </article>
+
+        <article
+            class="bg-gray-900 p-6 rounded-lg border border-green-600 hover:border-green-400 transition shadow-lg mb-6 focus-within:ring-4 ring-green-400"
+            tabindex="0" role="article" aria-label="Healthcare sector faces surge in cyberattacks">
+            <h3 class="text-2xl font-semibold text-green-300 mb-2">
+                Healthcare Sector Faces Surge in Cyberattacks
+            </h3>
+            <p class="text-gray-300 mb-2">
+                Hospitals and clinics report a significant increase in cyberattacks targeting patient data and critical
+                systems.
+            </p>
+            <p class="text-sm text-gray-500">Published: May 2, 2025</p>
+        </article>
+    </section>
+
+    <!-- Learn More -->
+    <section id="learn" class="bg-gray-800 py-16 px-6 text-center" tabindex="0"
+        aria-label="Learn more about cybersecurity">
+        <h2 class="text-3xl font-mono text-green-400 mb-6">Want to Learn More?</h2>
+        <p class="text-gray-300 max-w-xl mx-auto mb-8">
+            Explore additional resources, online courses, and communities to deepen your cybersecurity knowledge.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
+            <a href="https://www.cybrary.it" target="_blank" rel="noopener"
+                class="inline-block bg-green-500 hover:bg-green-600 focus:ring-4 focus:ring-green-400 focus:outline-none text-gray-900 font-semibold px-6 py-3 rounded-md transition">
+                Visit Cybrary
+            </a>
+            <a href="https://tcpioneer.org" target="_blank" rel="noopener"
+                class="inline-block bg-green-500 hover:bg-green-600 focus:ring-4 focus:ring-green-400 focus:outline-none text-gray-900 font-semibold px-6 py-3 rounded-md transition">
+                Learn from TCPioneer
+            </a>
+        </div>
+        <p class="text-gray-400 text-sm max-w-xl mx-auto">
+            Special thanks to <a href="https://tcpioneer.org" target="_blank" rel="noopener"
+                class="text-green-400 underline hover:text-green-500">tcpioneer.org</a> for pioneering cybersecurity
+            education and resources.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-500 py-8 text-center font-mono text-sm select-none">
+        <div class="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8">
+            <span class="flex items-center gap-2">
+                <i class="fa-regular fa-copyright text-green-400"></i>
+                2025 StaySafe Online.
+            </span>
+            <span class="flex items-center gap-2">
+                <i class="fa-solid fa-code text-green-400"></i>
+                Developed by
+                <a href="https://anandkeshari.com.np" target="_blank" rel="noopener"
+                    class="text-green-400 underline hover:text-green-500">Anand Keshari</a>
+            </span>
+            <span class="hidden sm:inline">&middot;</span>
+            <span class="flex items-center gap-2">
+                <i class="fa-solid fa-bolt text-green-400"></i>
+                Powered by
+                <a href="https://tcpioneer.org" target="_blank" rel="noopener"
+                    class="text-green-400 underline hover:text-green-500">The Cyber Pioneer</a>
+            </span>
+        </div>
+    </footer>
+
+    <!-- Typing Animation JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
